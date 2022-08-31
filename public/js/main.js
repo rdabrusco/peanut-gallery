@@ -1,7 +1,13 @@
 const deleteBtn = document.querySelectorAll('.del')
 const reviewItem = document.querySelectorAll('span.not')
 const reviewComplete = document.querySelectorAll('span.completed')
+const movieImg = document.querySelectorAll('.movieImg')
+const api = process.env.API
+console.log(api)
 
+Array.from(movieImg).forEach(el => {
+    el.src = `${api}${el.parentNode.childNodes[1]}`
+})
 
 Array.from(deleteBtn).forEach((el)=>{
     el.addEventListener('click', deleteReview)

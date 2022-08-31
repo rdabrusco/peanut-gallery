@@ -2,6 +2,7 @@ submit.addEventListener('click', postReview)
 
 
 
+
 async function postReview(){
     const movieTitle = document.querySelector('#title').value;
     const reviewText = document.querySelector('#review').value;

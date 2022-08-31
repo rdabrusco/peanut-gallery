@@ -13,7 +13,7 @@
     <% reviews.forEach( el => { %>
             <li class='reviewItem flex column' data-id='<%=el._id%>'>
                 <span class='title'><%= el.movie %></span>
-                <!-- <img class='movieImg'><%= el.img %></img> -->
+                <img class='movieImg' ></img>
                 <span class='rating'><%= el.rating %></span>
                 <p class='review'><%= el.review %></p>
                 <span class='del'> Delete </span>
